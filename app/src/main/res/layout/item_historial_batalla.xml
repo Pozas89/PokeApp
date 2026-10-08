@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardBackgroundColor="#263943"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="5dp"
+    app:strokeColor="#607D8B"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- FECHA -->
+        <TextView
+            android:id="@+id/tvFechaHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="06/10/2026 • 6:53 p. m."
+            android:textColor="#B0BEC5"
+            android:textSize="12sp" />
+
+        <!-- POKÉMON VS POKÉMON -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- JUGADOR -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgHistorialJugador"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="Pokémon jugador"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/tvPokemonJugadorHistorial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="LILEEP"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JUGADOR"
+                    android:textColor="#90CAF9"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- VS -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="VS"
+                android:textColor="#FFD54F"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <!-- CPU -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgHistorialCpu"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="Pokémon rival"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/tvPokemonCpuHistorial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="MILTANK"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CPU"
+                    android:textColor="#EF9A9A"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- SEPARADOR -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="#546E7A" />
+
+        <!-- GANADOR -->
+        <TextView
+            android:id="@+id/tvGanadorHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="🏆 MILTANK GANÓ"
+            android:textColor="#FFD54F"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- DATOS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="#17252C"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvHpHistorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HP restante: 67 / 95"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvPorcentajeHistorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Vida restante: 71%"
+                android:textColor="#70E39A"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvTurnosHistorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Turnos: 8"
+                android:textColor="#CFD8DC"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- VER REGISTRO -->
+        <Button
+            android:id="@+id/btnVerRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="VER REGISTRO"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#5E35B1" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

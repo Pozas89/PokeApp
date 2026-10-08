@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "142710251989",
+    "project_id": "pokeapp-70415",
+    "storage_bucket": "pokeapp-70415.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142710251989:android:856d8ef74a5b440afd5d5c",
+        "android_client_info": {
+          "package_name": "com.cesba.pokeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIewtTnFArnbrGYnzYXSoC-3LXDNbYZ4E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

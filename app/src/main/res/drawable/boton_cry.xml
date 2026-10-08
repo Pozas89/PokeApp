@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- PRESIONADO -->
+
+    <item android:state_pressed="true">
+
+        <shape android:shape="oval">
+
+            <solid android:color="#101820" />
+
+            <stroke
+                android:width="4dp"
+                android:color="#55DFFF" />
+
+        </shape>
+
+    </item>
+
+
+    <!-- NORMAL -->
+
+    <item>
+
+        <shape android:shape="oval">
+
+            <gradient
+                android:angle="270"
+                android:startColor="#405D70"
+                android:endColor="#182A36" />
+
+            <stroke
+                android:width="4dp"
+                android:color="#89A9BA" />
+
+        </shape>
+
+    </item>
+
+</selector>

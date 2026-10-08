@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_home"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="22dp"
+            android:background="@drawable/fondo_header">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PokéApp V2"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvBienvenida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¡Hola, Entrenador!"
+                android:textColor="#EDE7F6"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Qué aventura quieres comenzar?"
+                android:textColor="#D1C4E9"
+                android:textSize="14sp"
+                android:layout_marginTop="3dp" />
+
+        </LinearLayout>
+
+        <!-- CONTENIDO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- FILA 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnPokedex"
+                    style="@style/BotonMenuPokemon"
+                    android:text="📖&#10;Pokédex" />
+
+                <TextView
+                    android:id="@+id/btnBattleEmulator"
+                    style="@style/BotonMenuPokemon"
+                    android:text="⚔️&#10;Battle&#10;Emulator" />
+
+                <TextView
+                    android:id="@+id/btnBattleVersus"
+                    style="@style/BotonMenuPokemon"
+                    android:text="VS&#10;Battle&#10;Versus" />
+
+            </LinearLayout>
+
+            <!-- FILA 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnTorre"
+                    style="@style/BotonMenuPokemon"
+                    android:text="🏰&#10;Torre&#10;Pokémon" />
+
+                <TextView
+                    android:id="@+id/btnQuienPokemon"
+                    style="@style/BotonMenuPokemon"
+                    android:text="❓&#10;¿Quién es ese&#10;Pokémon?" />
+
+                <TextView
+                    android:id="@+id/btnSafari"
+                    style="@style/BotonMenuPokemon"
+                    android:text="🔭&#10;Safari&#10;Pokémon" />
+
+            </LinearLayout>
+
+            <!-- FILA 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnTipos"
+                    style="@style/BotonMenuPokemon"
+                    android:text="🔥&#10;Maestro&#10;de Tipos" />
+
+                <TextView
+                    android:id="@+id/btnMemory"
+                    style="@style/BotonMenuPokemon"
+                    android:text="🎴&#10;PokéMemory" />
+
+                <TextView
+                    android:id="@+id/btnFavoritos"
+                    style="@style/BotonMenuPokemon"
+                    android:text="♥&#10;Favoritos" />
+
+            </LinearLayout>
+
+            <!-- FILA 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnHistorial"
+                    style="@style/BotonMenuPokemon"
+                    android:text="📄&#10;Historial" />
+
+                <TextView
+                    android:id="@+id/btnMedallas"
+                    style="@style/BotonMenuPokemon"
+                    android:text="🏅&#10;Medallas" />
+
+                <TextView
+                    android:id="@+id/btnPerfil"
+                    style="@style/BotonMenuPokemon"
+                    android:text="👤&#10;Mi Perfil" />
+
+            </LinearLayout>
+
+            <!-- CONFIGURACIÓN -->
+            <TextView
+                android:id="@+id/btnConfiguracion"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/boton_configuracion"
+                android:gravity="center"
+                android:text="⚙   Configuración"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:elevation="5dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
